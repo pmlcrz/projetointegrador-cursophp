@@ -1,3 +1,30 @@
+<?php
+
+include "conexao.php";
+$nomeesobrenome = $_GET['nomeesobrenome'];
+$cpf = $_GET['cpf'];
+$endereco = $_GET['endereco'];
+$RG= $_GET['rg'];
+$data = $_GET['data'];
+$telefone = $_GET['telefone'];
+$email= $_GET['email'];
+$numerodecartaosus = $_GET['numerodecartaosus'];
+
+
+$sql = "insert into consulta (cpfdepaciente, dataconsulta, horaconsulta, motivoconsulta, nomepaciente, numcartaosus)
+values ('$cpfdepaciente', '$dataconsulta', '$horaconsulta', '$motivoconsulta', '$nomepaciente', '$numcartaosus)";
+
+
+$qry = mysqli_query($con,$sql);
+
+if ($qry) {
+    header ('location: listarpaciente.php');
+} else {
+    echo "<h1>Registro não cadastrado</h1>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -61,7 +88,7 @@
         <label>Se sim, qual?</label>
         <input type="text" doencapreexis_qual="doencapreexis_qual" varchar="5">
         <br>
-        <input type = submit name"salvar" value="Enviar">
+        <input type = submit name"salvar" value="Salvar">
 
 
 
