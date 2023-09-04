@@ -1,12 +1,12 @@
 <?php
-$servidor ='localhost';
-$usuario = 'root';
-$senha = '';
-$bd = 'sisgeresaude';
-$con = mysqli_connect('localhost',$usuario,$senha,$bd);
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'sisgeresaude';
 
-if ($con) {
-    echo "conectado ao sisgeresaude";
-} else{
-    echo "<h1>Erro na Conexão</h1>";
+$conn = mysqli_connect($host, $user, $password, $database);
+
+if (!$conn) {
+    die("Erro na conexão: " . mysqli_connect_error());
 }
+?>
