@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+nav.navbar {
+    background-color: #007bff;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+}
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-text {
+    color: #fff;
+}
+/*.fixed-top {
+    margin-top: 0;
+}*/
+
+.content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #141d49;
+    text-shadow: 2px 2px 1px #fff;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Estilos para links no footer */
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}

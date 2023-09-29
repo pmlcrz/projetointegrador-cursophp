@@ -1,0 +1,52 @@
+body {
+    body {
+        background-image: url('img/meddd.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .sombreado-notexto {
+        color: #fff;
+        text-shadow: 2px 2px 1px #000;
+    }    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .navbar-custom {
+        background-color: #3498db;
+    }
+
+    .navbar-custom .navbar-brand {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar-custom .navbar-text {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .navbar-custom .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float: none;
+    }
+
+    .form-control{
+        min-width: 120px;
+    }
+
+   /* footer {
+        text-align: center;
+        background-color: #1a8afa;
+        color: #fff;
+        padding: 10px;
+        margin-top: 117px;
+    }
